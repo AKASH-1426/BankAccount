@@ -52,7 +52,7 @@ public class AccountDetails {
 
             switch (select_option) {
                 case 'A':
-                    System.out.println("Your account balance is Rs." + getBalance());
+                    System.out.println("Your account balance is Rs. " + getBalance());
                     break;
                 case 'B':
                     System.out.println("enter amount to deposit");
@@ -72,9 +72,9 @@ public class AccountDetails {
                     float prv_trans = getprv_trans();
                     System.out.print("Your previous transaction was ");
                     if (prv_trans > 0) {
-                        System.out.println("a credit of Rs." + prv_trans);
+                        System.out.println("a credit of Rs. " + prv_trans);
                     } else if (prv_trans < 0) {
-                        System.out.println("a debit of Rs." + Math.abs(prv_trans));
+                        System.out.println("a debit of Rs. " + Math.abs(prv_trans));
                     }else{
                         System.out.println("null");
                     }
